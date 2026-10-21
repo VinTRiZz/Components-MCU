@@ -1,5 +1,4 @@
 COMPONENTS_CONFIGURE_COMPONENT(MCU "1.0.0")
-COMPONENTS_LINK_COMPONENT(Components-MCU Core)
 if (COMPONENTS_IS_ENABLED_QT)
-    target_link_libraries(Components-MCU PRIVATE Qt5::Core)
+    target_link_libraries(Components-MCU PRIVATE Qt5::)
 endif()
